@@ -4,6 +4,7 @@ Graffiti est un site internet présentant des graffiti.
 
 ## Environnement de développement
 * sous-système Windows pour Linux WSL2 virtualisation d’un système d’exploitation Linux.
+* VS code avec l'installation de wsl2 et l'extension Remote - WSL v0.58.5
 
 ### pré-requis
 
