@@ -4,6 +4,9 @@ Graffiti est un site internet présentant des graffiti.
 
 ## Environnement de développement
 
+* sous-système Windows pour Linux WSL2 virtualisation d’un système d’exploitation Linux.
+
+
 ### pré-requis
 
 * PHP 7.4
