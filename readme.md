@@ -1,4 +1,4 @@
-# Graffiti
+#  Graffiti en cours de réalisation
 
 Graffiti est un site internet présentant des graffiti.
 
