@@ -1,27 +1,27 @@
-# Graffiti en cours de réalisation
+# Graffiti in progress
 
-Graffiti est un site internet présentant des graffiti.
+Graffiti is a website presenting graffiti.
 
-## Environnement de développement
+## Development environment
 
-* sous-système Windows pour Linux, WSL2 virtualisation d’un système d’exploitation Linux.
-* Editeur de text VS code avec installation de l'extension Remote - WSL v0.58.5 pour wsl2.
+* Windows subsystem for Linux, WSL2 virtualization of a Linux operating system..
+* Text editor VS code with remote extension installation - WSL v0.58.5 for wsl2.
 
-### pré-requis
+### pre-requisites
 
 * PHP 7.4
 * COMPOSER 
 * SYMFONY CLI 
 * DOCKER 
 * DOCKER-COMPOSE
-* SOUS SYSTEME WINDOWS WSL2 POUR LINUX (environnement GNU/Linux) 
+* WINDOWS WSL2 FOR LINUX (GNU/Linux environment) 
 
-Vous pouvez vérifier les pré-requis (sauf docker et docker-compose) avec la commande suivante (de la cli symfony)
+You can check the pre-requisites (except docker and docker-compose) with the following command (from the symfony cli).
 
 ```bash
 symfony check:requirements
 ```
-### Lancer l'environnement de développement
+### Launch the development environment
 
 ```bash
 docker-compose up -d
