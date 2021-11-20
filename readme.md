@@ -1,5 +1,5 @@
 # Graffiti in progress
-[![450372](https://user-images.githubusercontent.com/79690181/142733590-2cf5e4f7-3ac2-4d57-98da-89842f40a993.png)](https://asciinema.org/a/O0TDlyVE0pfVe6xTL2HvlyGrh)
+[![asciicast](https://asciinema.org/a/O0TDlyVE0pfVe6xTL2HvlyGrh.svg)](https://asciinema.org/a/O0TDlyVE0pfVe6xTL2HvlyGrh)
 
 Graffiti is a website presenting graffiti.
 
