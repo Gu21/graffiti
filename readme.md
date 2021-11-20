@@ -1,5 +1,5 @@
 # Graffiti in progress
-[![asciicast](https://asciinema.org/a/O0TDlyVE0pfVe6xTL2HvlyGrh.svg)](https://asciinema.org/a/O0TDlyVE0pfVe6xTL2HvlyGrh-2-600x675)
+[![asciicast](https://asciinema.org/a/O0TDlyVE0pfVe6xTL2HvlyGrh.svg)](https://asciinema.org/a/O0TDlyVE0pfVe6xTL2HvlyGrh?autoplay=1)
 
 Graffiti is a website presenting graffiti.
 
