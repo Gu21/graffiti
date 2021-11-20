@@ -1,5 +1,5 @@
 # Graffiti in progress
-
+![test](https://user-images.githubusercontent.com/79690181/142732658-07ef24c3-0ad7-4292-a019-e99d99f4bcfd.png)
 Graffiti is a website presenting graffiti.
 
 ## Development environment
