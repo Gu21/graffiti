@@ -1,5 +1,6 @@
 # Graffiti in progress
 
+![Peek graffiti](https://user-images.githubusercontent.com/79690181/142780603-b1990e40-2b65-4269-9395-4f52b217840d.gif)
 
 Graffiti is a website presenting graffiti.
 
