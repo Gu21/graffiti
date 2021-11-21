@@ -1,6 +1,6 @@
 # Graffiti in progress
 
-![Peek 2021-11-21 23-19](https://user-images.githubusercontent.com/79690181/142781157-025568f8-396a-4335-9af4-1d8455ed203d.gif)
+![Peek 2021-11-21 23-19-graffiti](https://user-images.githubusercontent.com/79690181/142781184-c6a58848-9137-4bc8-b38e-0f27da978f46.gif)
 
 Graffiti is a website presenting graffiti.
 
