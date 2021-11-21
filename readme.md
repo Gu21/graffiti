@@ -6,6 +6,8 @@ Graffiti is a website presenting graffiti.
 
 ## Development environment
 
+![WSL](https://user-images.githubusercontent.com/79690181/142780749-e4d85e74-d5ad-4079-89ac-b8a1d9186ab4.PNG)
+
 * Windows subsystem for Linux, WSL2 virtualization of a Linux operating system.
 * Text editor VS code with remote extension installation - WSL v0.58.5 for wsl2.
 
