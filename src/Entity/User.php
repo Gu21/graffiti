@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -54,6 +56,22 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      * @ORM\Column(type="text", nullable=true)
      */
     private $apropos;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Oeuvres::class, mappedBy="user", orphanRemoval=true)
+     */
+    private $oeuvres;
+
+    /**
+     * @ORM\OneToMany(targetEntity=BlogPosts::class, mappedBy="user", orphanRemoval=true)
+     */
+    private $blogPosts;
+
+    public function __construct()
+    {
+        $this->oeuvres = new ArrayCollection();
+        $this->blogPosts = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -188,6 +206,66 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setApropos(?string $apropos): self
     {
         $this->apropos = $apropos;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Oeuvres[]
+     */
+    public function getOeuvres(): Collection
+    {
+        return $this->oeuvres;
+    }
+
+    public function addOeuvre(Oeuvres $oeuvre): self
+    {
+        if (!$this->oeuvres->contains($oeuvre)) {
+            $this->oeuvres[] = $oeuvre;
+            $oeuvre->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeOeuvre(Oeuvres $oeuvre): self
+    {
+        if ($this->oeuvres->removeElement($oeuvre)) {
+            // set the owning side to null (unless already changed)
+            if ($oeuvre->getUser() === $this) {
+                $oeuvre->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|BlogPosts[]
+     */
+    public function getBlogPosts(): Collection
+    {
+        return $this->blogPosts;
+    }
+
+    public function addBlogPost(BlogPosts $blogPost): self
+    {
+        if (!$this->blogPosts->contains($blogPost)) {
+            $this->blogPosts[] = $blogPost;
+            $blogPost->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeBlogPost(BlogPosts $blogPost): self
+    {
+        if ($this->blogPosts->removeElement($blogPost)) {
+            // set the owning side to null (unless already changed)
+            if ($blogPost->getUser() === $this) {
+                $blogPost->setUser(null);
+            }
+        }
 
         return $this;
     }
