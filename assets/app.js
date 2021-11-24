@@ -15,4 +15,4 @@ import './js/contact';
 import './js/script';
 
 // start the Stimulus application
-import './bootstrap';
+import 'bootstrap';
