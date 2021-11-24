@@ -18,11 +18,12 @@ Graffiti is a website presenting graffiti.
 ### pre-requisites
 
 * PHP 7.4
-* COMPOSER 
+* COMPOSER 2
 * SYMFONY CLI 
 * DOCKER 
 * DOCKER-COMPOSE
 * WINDOWS WSL2 FOR LINUX (GNU/Linux environment) 
+* NODEJS ET NPM
 
 You can check the pre-requisites (except docker and docker-compose) with the following command (from the symfony cli).
 
@@ -32,6 +33,9 @@ symfony check:requirements
 ### Launch the development environment
 
 ```bash
+composer install
+npm install
+npm run build
 docker-compose up -d
 symfony serve -d
 ```
