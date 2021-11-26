@@ -2,9 +2,8 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<meta
-		name="viewport" content="width=device-width, initial-scale=1">
-        
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<title>
 			{% block title %}Welcome!
 			{% endblock %}
@@ -18,6 +17,10 @@
 		{% endblock %}
 	</head>
 	<body>
+		{% include "base/nav.html.twig" %}
+
 		{% block body %}{% endblock %}
+
+	
 	</body>
 </html>
