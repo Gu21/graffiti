@@ -1,0 +1,58 @@
+body {
+    color: #fff;
+    font-family: $extra-font;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+.navbar {
+
+    background-color: $black !important;
+
+
+    .navbar-brand {
+        color: $primary-color;
+        width: 21%;
+        font-size: 31px;
+        font-family: 700;
+
+        span {
+
+            color: $event-color;
+        }
+
+        &::first-letter {
+
+            text-transform: uppercase;
+        }
+
+    }
+
+}
+
+.navbar-brand,
+.navbar-brand:focus,
+.navbar-brand:hover {
+    color: none;
+
+}
+
+.nav-link {
+    color: $primary-color;
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+
+
+
+    &:hover,
+    &:focus {
+        color: $event-color;
+    }
+}
+
+.me-auto {
+    margin-right: 0 !important;
+}
