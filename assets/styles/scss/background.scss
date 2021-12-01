@@ -1,9 +1,10 @@
 .bg-3 {
-
+    display: flex;
+    align-items: center;
     background-image: url("/assets/styles/images/footer-graffeur.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 88vh;
+    // height: 100vh;
 }
 

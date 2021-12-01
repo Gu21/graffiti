@@ -1,5 +1,6 @@
 .boxFooter {
     padding: 55px 13px 55px 13px;
+    margin-bottom: 30px;
 
 }
 
@@ -9,7 +10,25 @@
 
     .linkFooter {
 
-        text-decoration: none!important;
+        text-decoration: none !important;
     }
 }
 
+.linkFooter {
+
+    color: $third-color !important;
+}
+
+
+.paragraphFooter {
+
+    line-height: normal;
+    text-align: justify;
+    padding: 21px 29px 0px 37px;
+}
+
+.logoFooter {
+
+    height: 34px;
+    width: 34px;
+}
