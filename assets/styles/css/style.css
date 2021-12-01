@@ -48,17 +48,32 @@ p {
   line-height: 30px;
 }
 
+body {
+  color: #fff;
+  font-family: "Hind", serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
 .navbar {
   background-color: #242424 !important;
 }
 .navbar .navbar-brand {
   color: #fff;
+  width: 15%;
+  font-size: 31px;
+  font-family: 700;
 }
 .navbar .navbar-brand span {
   color: #c54041;
 }
+.navbar .navbar-brand::first-letter {
+  text-transform: uppercase;
+}
 
-.navbar-brand, .navbar-brand:focus, .navbar-brand:hover {
+.navbar-brand,
+.navbar-brand:focus,
+.navbar-brand:hover {
   color: none;
 }
 
@@ -81,7 +96,7 @@ p {
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 }
 @media (min-width: 992px) {
@@ -89,4 +104,11 @@ p {
     padding-left: 3.5rem;
     padding-right: 1.5rem;
   }
+}
+.bg-3 {
+  background-image: url(./images/footer-graffeur.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }/*# sourceMappingURL=style.css.map */
