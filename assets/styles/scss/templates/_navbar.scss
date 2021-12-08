@@ -1,58 +1,63 @@
 body {
-    color: #fff;
-    font-family: $extra-font;
-    font-size: 20px;
-    line-height: 1.5;
+  color: #fff;
+  font-family: $extra-font;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
+.navbar{
+ 
+  background-color: $black !important;
+    
 
-.navbar {
+  .navbar-brand {
+    color: $primary-color;
+    width: 15%;
+    font-size: 3rem;
 
-    background-color: $black !important;
-
-
-    .navbar-brand {
-        color: $primary-color;
-        width: 15%;
-        font-size: 31px;
-        font-family: 700;
-
-        span {
-
-            color: $event-color;
-        }
-
-        &::first-letter {
-
-            text-transform: uppercase;
-        }
-
+    span {
+      color: $event-color;
     }
 
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
 }
 
 .navbar-brand,
 .navbar-brand:focus,
 .navbar-brand:hover {
-    color: none;
-
+  color: none;
 }
 
 .nav-link {
-    color: $primary-color;
-    display: block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+  color: $primary-color;
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
 
-
-
-    &:hover,
-    &:focus {
-        color: $event-color;
-    }
+  &:hover,
+  &:focus {
+    color: $event-color;
+  }
 }
 
 .me-auto {
-    margin-right: 0 !important;
+  margin-right: 0 !important;
 }
+
+.navbar-toggler {
+
+background-color: $event-color !important;
+}
+
+.navbar-toggler-icon {
+
+    background-color: $primary-color;
+}
+

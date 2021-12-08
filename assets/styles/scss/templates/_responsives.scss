@@ -1,5 +1,17 @@
 // ************* Media query **********
 
+@include mobile-xs {
+
+    .box-title-home{
+
+        .titleHome,span {
+            font-size: 3rem;
+        }
+
+    }
+}
+
+
 @include desktop {
 
     .navbar-expand-lg .navbar-collapse {
@@ -9,23 +21,9 @@
     }
 
     .navbar-expand-lg .navbar-nav .nav-link {
-                padding-left: 3.5rem;
-                padding-right: 1.5rem;
-            }
-    
+        padding-left: 3.5rem;
+        padding-right: 1.5rem;
+    }
+
 }
-
-@include mobile-xs {
-
-    .titleHome {
-          font-size: 3rem!important;
-        }
-}
-
-
-
-
-
-
-
 

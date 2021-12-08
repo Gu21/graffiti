@@ -1,6 +1,9 @@
 .boxFooter {
-    padding: 55px 13px 55px 13px;
-    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 41em;
 
 }
 
@@ -24,11 +27,18 @@
 
     line-height: normal;
     text-align: justify;
-    padding: 21px 29px 0px 37px;
+    // padding: 21px 29px 0px 37px;
 }
 
 .logoFooter {
 
     height: 34px;
     width: 34px;
+}
+
+.paragraph-copy {
+
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
