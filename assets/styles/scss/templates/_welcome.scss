@@ -12,23 +12,53 @@
 }
 
 .box-title-home {
+
   .titleHome,
   span {
     font-size: 5.5rem;
   }
+
   span {
     color: $event-color;
   }
 }
 
 .btn {
-  display: inline-flex;
-  font-size: 1.5rem !important;
-  background: $black !important;
-  color: $event-color !important;
-  border-color: transparent !important;
-  font-weight: 700;
-  overflow: hidden;
-  width: 15%;
-}
 
+  border-radius: 4px;
+  background: $black !important;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  transition: all 0.5s;
+  cursor: pointer;
+
+
+  span {
+    font-size: 2rem !important;
+    color: $event-color !important;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -8px;
+    transition: 0.5s;
+  }
+
+  span:hover {
+    padding-right: 25px;
+
+    &:after {
+      opacity: 1;
+      right: 0;
+    }
+   
+  }
+}
