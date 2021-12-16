@@ -23,9 +23,9 @@
 
 .btn-about-home {
 
-    background: #242424!important;
+    background: $black!important;
     border-color: transparent!important;
-    color: #c54041!important;
+    color: $event-color!important;
     display: inline-flex;
     font-size: 1.2rem!important;
     font-weight: 700;
@@ -34,6 +34,15 @@
     display: block;
     margin: 0 auto;
     border-radius: 5px;
+    transition: 0.5;
+
+    &&:hover {
+
+        color: $primary-color;
+        background: $event-color;
+
+
+    }
     
 }
 
