@@ -29,7 +29,6 @@
 .btn {
 
   border-radius: 4px;
-  // background: $black !important;
   border: 1px solid $primary-color;
   padding: 10px;
   text-align: center;
@@ -46,7 +45,7 @@
     transition: 0.5s;
   }
 
-  span:after {
+  span::after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -58,7 +57,7 @@
   span:hover {
     padding-right: 25px;
 
-    &:after {
+    &::after {
       opacity: 1;
       right: 0;
     }

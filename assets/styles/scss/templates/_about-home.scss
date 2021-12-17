@@ -1,58 +1,59 @@
 .card-text:last-child {
-
-    margin-bottom: 0;
-    color: black;
-    text-align: justify;
-    line-height: 1.5em;
-    padding: 12px;
+  margin-bottom: 0;
+  color: black;
+  text-align: justify;
+  line-height: 1.5em;
+  padding: 12px;
 }
 
 .card-title {
-
-    margin-bottom: 0.5rem;
-    color: black !important;
-    text-align: center;
-    padding: 20px 10px 20px 10px;
-
+  margin-bottom: 0.5rem;
+  color: black !important;
+  text-align: center;
+  padding: 20px 10px 20px 10px;
 }
 
 .box-button-home {
-
-    padding: 10px 5px 10px 5px;
+  padding: 10px 5px 10px 5px;
 }
 
 .btn-about-home {
-
-    background: $black!important;
-    border-color: transparent!important;
-    color: $event-color!important;
-    display: inline-flex;
-    font-size: 1.2rem!important;
-    font-weight: 700;
-    overflow: hidden;
-    width: 29%;
-    display: block;
-    margin: 0 auto;
-    border-radius: 5px;
-    transition: 0.5;
-
-    &&:hover {
-
-        color: $primary-color;
-        background: $event-color;
+  background: $black !important;
+  border-color: transparent !important;
+  color: $event-color !important;
+  display: inline-flex;
+  font-size: 1.2rem !important;
+  font-weight: 700;
+  overflow: hidden;
+  width: 29%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  transition: 0.5s ease-out;
+  cursor: pointer;
+  position: relative;
 
 
-    }
-    
+  &::after {
+
+    content: "\02C3";	
+    position: absolute;
+    top: 2px;
+    right: -16px;
+    opacity: 0;
+    right: 0;
+    transition: 0.5s; 
+  }
+
+  &:hover {
+    padding-right: 25px;
+    opacity: 1;
+  }
 }
 
 .card-body-home {
-
-
-    time {
-
-        color: black;
-        padding: 5px 0 5px 10px;
-
-    }
+  time {
+    color: black;
+    padding: 5px 0 5px 10px;
+  }
 }
