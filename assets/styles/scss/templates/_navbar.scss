@@ -90,6 +90,31 @@ body {
 
 }
 
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; 
+}
+
+
+.dropdown-menu {
+
+  background: $transparent;
+  border: none;
+
+  .dropdown-item {
+    color: $event-color;
+    font-size: 1.3rem;
+    font-weight: 700;
+
+  }
+
+  &:hover {
+
+    color: $primary-color;
+  }
+}
+
+
 
 
 .me-auto {
