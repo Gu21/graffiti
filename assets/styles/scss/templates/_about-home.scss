@@ -33,21 +33,30 @@
   cursor: pointer;
   position: relative;
 
-
-  &::after {
-
-    content: "\02C3";	
-    position: absolute;
-    top: 2px;
-    right: -16px;
-    opacity: 0;
-    right: 0;
-    transition: 0.5s; 
+  span {
+    color: $event-color !important;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
   }
 
-  &:hover {
-    padding-right: 25px;
-    opacity: 1;
+  span::after {
+    content: "\02C3";
+    position: absolute;
+    top: 2px;
+    opacity: 0;
+    right: 9;
+   
+  }
+
+  span:hover {
+    padding-right: 26px;
+    color: $primary-color!important;
+
+    &:after {
+      opacity: 1;
+      right: 0;
+    }
   }
 }
 

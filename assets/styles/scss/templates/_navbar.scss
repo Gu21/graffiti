@@ -95,6 +95,10 @@ body {
   margin-top: 0; 
 }
 
+.dropdown-item.active, .dropdown-item:active {
+  background-color: $primary-color;
+}
+
 
 .dropdown-menu {
 
