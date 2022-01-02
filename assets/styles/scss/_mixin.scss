@@ -1,7 +1,5 @@
-//transform
-@mixin transforms {
-    
-    transform: translateX(-50%);
+@mixin transform {
+
+    transform-origin: 0%;
+    transform: translateX(100px);
 }
-
-

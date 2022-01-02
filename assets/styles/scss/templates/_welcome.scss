@@ -13,9 +13,7 @@
 
 .box-title-home {
 
-  
-  @include transforms;
-
+  @include transform;
 
 
   .titleHome,
@@ -30,18 +28,7 @@
 
 }
 
-@keyframes  appearance {
 
-from {
-
-  opacity:0;
-}
-to {
-
-  opacity:1;
-}
-
-}
 
 
 
