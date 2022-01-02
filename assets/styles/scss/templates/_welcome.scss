@@ -13,21 +13,24 @@
 
 .box-title-home {
 
+visibility: hidden;
+transition: all 0.5s;
   .titleHome,
   span {
     font-size: 4.6rem;
     text-shadow: 1px 2px 1px $primary-color;
-
-
   }
 
   span {
     color: $event-color;
   }
+
 }
 
-.btn {
 
+
+
+.btn-1 {
   border-radius: 4px;
   border: 1px solid $primary-color;
   padding: 10px;
@@ -35,7 +38,7 @@
   font-weight: 700;
   transition: all 0.5s;
   cursor: pointer;
-
+  background: transparent;
 
   span {
     font-size: 1.8rem !important;
@@ -46,12 +49,11 @@
   }
 
   span::after {
-    content: '\00bb';
+    content: "\00bb";
     position: absolute;
     opacity: 0;
     top: 0;
     right: -8px;
-  
   }
 
   span:hover {
@@ -61,6 +63,5 @@
       opacity: 1;
       right: 0;
     }
-   
   }
 }
