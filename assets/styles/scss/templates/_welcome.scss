@@ -12,7 +12,8 @@
 }
 
 .box-title-home {
-
+  animation-duration: 3s;
+  animation-name: fadeIn;
 
   .titleHome,
   span {
@@ -23,10 +24,20 @@
   span {
     color: $event-color;
   }
-
 }
 
-
+@keyframes fadeIn {
+  from {
+    opacity:0;
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 
 .btn-1 {
   border-radius: 4px;
@@ -37,7 +48,9 @@
   transition: all 0.5s;
   cursor: pointer;
   background: transparent;
-  animation: appearance 5s;
+  animation-duration: 3s;
+  animation-name: fadeHome;
+
 
   span {
     font-size: 1.8rem !important;
@@ -62,5 +75,19 @@
       opacity: 1;
       right: 0;
     }
+  }
+}
+
+
+@keyframes fadeHome {
+  from {
+    opacity:0;
+    margin-bottom:100%;
+   
+  }
+  to {
+    opacity: 1;
+    margin-bottom: 0%;
+   
   }
 }

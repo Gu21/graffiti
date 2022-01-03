@@ -1,3 +1,16 @@
+.title-about-home {
+  // about.js
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: 2s ease-out;
+}
+
+.card {
+  opacity: 0;
+  transform: translateX(400px);
+  transition: 2s ease-out;
+}
+
 .card-text:last-child {
   margin-bottom: 0;
   color: black;
@@ -46,12 +59,11 @@
     top: 2px;
     opacity: 0;
     right: 9;
-   
   }
 
   span:hover {
     padding-right: 26px;
-    color: $primary-color!important;
+    color: $primary-color !important;
 
     &:after {
       opacity: 1;
