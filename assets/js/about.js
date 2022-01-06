@@ -10,15 +10,15 @@ window.addEventListener("scroll", () => {
 
   scrollResult =
     (window.innerHeight + window.scrollY) / document.body.offsetHeight;
-//   console.log(scrollResult);
+  console.log(scrollResult);
 
   // Show the image
-  if (scrollResult > 0.5) {
+  if (scrollResult > 0.40) {
     titleAbout.style.opacity = "1";
     titleAbout.style.transform = "none";
   };
 
-  if (scrollResult > 0.6) {
+  if (scrollResult > 0.50) {
     cardHome[0].style.opacity = "1";
     cardHome[0].style.transform = "none";
     setTimeout(() => {

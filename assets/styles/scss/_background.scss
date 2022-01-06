@@ -1,33 +1,51 @@
 .bg-1 {
-
     display: flex;
     align-items: center;
-    background-image: linear-gradient(to left,rgba(0,0,0,.5),rgba(0,0,0,.5)),url("/public/img/pulverisateur.webp");
+    background-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("/public/img/pulverisateur.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    
    
-
-}
+  }
 
 .bg-2 {
-
-   background-color: $black; 
-  
+  background-color: $black;
 }
-
 
 .bg-3 {
-    display: flex;
-    align-items: center;
-    background-image: url("/assets/styles/images/graff.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("/assets/styles/images/graff.png");
+  background-position: 76%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+ 
 }
 
+.bg-4 {
+  align-items: center;
+  background-image: url("/public/img/graf-urbain.jpg");
+  background-position: 76%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  z-index: -1;
+}
 
-
+.graf-home-gallery {
+  width: 45%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}

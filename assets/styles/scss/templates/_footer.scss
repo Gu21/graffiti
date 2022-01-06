@@ -1,44 +1,61 @@
 .boxFooter {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 41em;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 41em;
 }
 
 .barFooter {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
 
-    .linkFooter {
-
-        text-decoration: none !important;
-    }
-}
-
-.linkFooter {
-
+  .linkFooter {
     color: $third-color !important;
-}
+    text-decoration: none !important;
 
+    span {
+      color: $primary-color !important;
+      display: inline-block;
+      position: relative;
+    
+    }
+
+    span::before {
+      content: "\2192";
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      left: -23px;
+      transform: translateX(-1.5em);
+      transition: 0.5s !important; 
+    
+    }
+
+    span:hover {
+      border-bottom: 1px solid $primary-color;
+      
+
+      &::before {
+        opacity: 1;
+        left: -20px;
+      }
+    }
+  }
+}
 
 .paragraphFooter {
-
-    line-height: normal;
-    text-align: justify;
-    // padding: 21px 29px 0px 37px;
+  text-align: justify;
 }
 
 .logoFooter {
-
-    height: 34px;
-    width: 34px;
+  height: 34px;
+  width: 34px;
 }
 
 .paragraph-copy {
-
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
 }

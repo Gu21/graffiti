@@ -54,9 +54,9 @@
   }
 
   span::after {
-    content: "\02C3";
+    content: "\2192";
     position: absolute;
-    top: 2px;
+    top: 0;
     opacity: 0;
     right: 9;
   }
