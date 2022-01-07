@@ -1,6 +1,6 @@
 const titleAbout = document.querySelector(".title-about-home");
 const cardHome = document.querySelectorAll(".card");
-console.log(cardHome);
+
 // Make the image appear on the scroll
 window.addEventListener("scroll", () => {
 
@@ -10,7 +10,7 @@ window.addEventListener("scroll", () => {
 
   scrollResult =
     (window.innerHeight + window.scrollY) / document.body.offsetHeight;
-  console.log(scrollResult);
+  // console.log(scrollResult);
 
   // Show the image
   if (scrollResult > 0.40) {
@@ -18,16 +18,16 @@ window.addEventListener("scroll", () => {
     titleAbout.style.transform = "none";
   };
 
-  if (scrollResult > 0.50) {
+  if (scrollResult > 0.45) {
     cardHome[0].style.opacity = "1";
     cardHome[0].style.transform = "none";
     setTimeout(() => {
       cardHome[1].style.opacity = "1";
       cardHome[1].style.transform = "none";
-    }, 1000);
+    }, 800);
     setTimeout(() => {
         cardHome[2].style.opacity = "1";
         cardHome[2].style.transform = "none";
-      }, 1500);
+      }, 1000);
   };
 });

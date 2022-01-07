@@ -3,12 +3,14 @@
   opacity: 0;
   transform: translateX(-200px);
   transition: 2s ease-out;
+  
 }
 
 .card {
   opacity: 0;
   transform: translateX(400px);
   transition: 2s ease-out;
+  position: inherit;
 }
 
 .card-text:last-child {
@@ -44,7 +46,7 @@
   border-radius: 5px;
   transition: 0.5s ease-out;
   cursor: pointer;
-  position: relative;
+  // position: relative;
 
   span {
     color: $event-color !important;

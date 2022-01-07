@@ -1,18 +1,17 @@
 .bg-1 {
-    display: flex;
-    align-items: center;
-    background-image: linear-gradient(
-        to left,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ),
-      url("/public/img/pulverisateur.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-   
-  }
+
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/public/img/pulverisateur.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+ 
+}
 
 .bg-2 {
   background-color: $black;
@@ -26,6 +25,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+
  
 }
 
@@ -35,6 +35,7 @@
   background-position: 76%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   position: relative;
   z-index: -1;
@@ -45,7 +46,7 @@
   height: auto;
   position: absolute;
   bottom: 0;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
+  left: 5%;
+  top: 9%;
+  // transform: translate(-50%,-50%);
 }

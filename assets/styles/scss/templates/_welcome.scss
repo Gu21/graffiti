@@ -1,3 +1,12 @@
+.title-nav-home {
+  height: 47em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
 .box-title-home {
     animation-duration: 3s;
     animation-name: fadeIn;
@@ -37,7 +46,7 @@
     background: transparent;
     animation-duration: 3s;
     animation-name: fadeHome;
-  
+    
   
     span {
       font-size: 1.8rem !important;
@@ -45,6 +54,7 @@
       display: inline-block;
       position: relative;
       transition: 0.5s;
+     
     }
   
     span::after {
@@ -53,6 +63,7 @@
       opacity: 0;
       top: 0;
       right: -8px;
+      
     }
   
     span:hover {

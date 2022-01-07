@@ -1,17 +1,21 @@
 body {
-  color: #fff;
+  color:$primary-color;
   font-family: $extra-font;
   font-size: 20px;
   line-height: 1.5;
+
 }
 
 .navbar {
-  background-color: $black !important;
+position: fixed;
+width: 100%;
+top: 0;
+left: 0;
+right: 0;
+transition: 0.5s;
+z-index: 2;
 
 
- 
-
-  
 
   .navbar-brand {
     color: $primary-color;
@@ -27,6 +31,33 @@ body {
     }
   }
 }
+
+.scrollNav {
+
+background: $black;
+
+.navbar-brand {
+  color: $primary-color;
+  width: 15%;
+  font-size: 3rem;
+
+  span {
+    color: $event-color;
+  }
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+}
+
+.nav-link {
+
+  color: $black;
+}
+
+
+
 
 .navbar-brand,
 .navbar-brand:focus,
