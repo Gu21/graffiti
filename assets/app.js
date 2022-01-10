@@ -16,7 +16,7 @@ import { Tooltip, Toast, Popover } from 'bootstrap';
 import './js/about';
 import './js/parallax';
 import './js/nav';
-
+import './js/ringButton';
 
 // start the Stimulus application
 import './bootstrap';

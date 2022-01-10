@@ -6,7 +6,7 @@ window.addEventListener('scroll', () => {
      
     let scroll = document.querySelector('.scrollNav');
     navBar.classList.add('scrollNav');
-    scroll.style.padding = "10px";
+  
 
  }else {
 
