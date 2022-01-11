@@ -6,7 +6,7 @@ const ring = () => {
   audio.play();
 };
 
-soundButton1.addEventListener("click", () => {
+soundButton1.addEventListener("mouseover", () => {
     soundButton1.classList.add('audio');
   return ring();
 });
