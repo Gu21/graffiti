@@ -157,3 +157,19 @@ background: $black;
 .nav-link:hover {
   display: block;
 }
+
+.audio {
+
+
+animation: mp3;
+animation-duration: 10s;
+
+}
+
+@keyframes mp3 {
+
+  from {
+   transition: 0s;
+  }
+  
+}
