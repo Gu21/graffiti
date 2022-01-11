@@ -1,5 +1,6 @@
 const parallax = document.querySelector('.parallax');
 
+
 window.addEventListener('scroll', () => {
 
 

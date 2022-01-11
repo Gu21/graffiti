@@ -6,6 +6,71 @@ body {
 
 }
 
+//LE LOADER
+
+.loader-container {
+
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  z-index: 999;
+  // transition:  visibility 1s ease-in-out;
+
+ 
+
+  .loader-inner {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ 
+
+    #titleLoader {
+      font-size: 3em;
+      font-weight: 700;
+      text-transform: uppercase; 
+      font-family: $extra-font;
+      transform: scale(1) rotate(0deg);
+      animation: loading 4s linear infinite;
+
+
+        .colorParagraphLoader {
+
+          color: $primary-color!important;
+        }
+
+    }
+  }
+}
+
+.hidden {
+
+  opacity: 1; 
+  // visibility: hidden;
+ }
+
+@keyframes loading {
+
+50% {
+
+  transform:  scale(.5) rotate(360deg);
+ 
+}
+100% {
+
+  transform:  scale(1) rotate(360deg);
+}
+
+}
+
+
+//LA NAV
+
 .navbar {
 position: fixed;
 width: 100%;
